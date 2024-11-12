@@ -1,0 +1,24 @@
+:root{
+--color-lightSeaGreen: LightSeaGreen;
+}
+*{
+padding: 0;
+margin: 0;
+}
+
+body{
+    display: grid;
+    min-height: 100dvh;
+    grid-template-rows: auto 1fr auto;
+}
+
+header{
+    background-color: var(--color-lightSeaGreen);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo{
+margin: auto 0;
+}
