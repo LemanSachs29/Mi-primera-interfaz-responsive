@@ -1,6 +1,9 @@
 :root {
     --color-lightSeaGreen: LightSeaGreen;
 }
+html{
+    height: 100%;
+}
 
 * {
     box-sizing: content-box;
@@ -10,54 +13,43 @@
     list-style: none;
 }
 
-body>* {
-    box-shadow: 10px 6px 37px -13px rgba(51, 51, 51, 0.74);
-    border-radius: 10px;
-    padding: 10px;
-    text-align: center;
-}
-
 body {
     display: grid;
-    gap: 20px;
-    grid-template:
+    min-height: 100%;
+    gap: 10px;
+    grid-template-areas: 
         "header"
-        "navbar"
         "aside"
         "main"
         "footer";
+    grid-template-rows: 10% 10% auto 10%;
+}
 
-    header {
-        grid-area: header;
-        background-color: lightgrey;
+body > * {
+    background-color: lightblue;
+    border: 2px solid black;
+}
+
+header {
+    grid-area: header;
+}
+aside {
+    grid-area: aside;
+}
+main {
+    grid-area: main;
+}
+footer {
+    grid-area: footer;
+}
+
+@media (min-width: 600px) {
+    body {
+        grid-template-areas:
+            "header header"
+            "aside  main"
+            "footer footer";
+        grid-template-columns: 10% auto;
+        grid-template-rows: 10% auto 10%;
     }
-
-    nav {
-        grid-area: navbar;
-        background-color: lightgrey;
-    }
-
-    aside {
-        grid-area: aside;
-        background-color: lightgrey;
-    }
-
-    main {
-        grid-area: main;
-        background-color: lightgrey;
-    }
-
-    footer {
-        grid-area: footer;
-        background-color: lightgrey;
-    }
-
-    @media (min-width: 768px) {
-        grid-template:
-            "header header header header"
-            "navbar navbar navbar navbar"
-            "aside main main main"
-            "footer footer footer footer";
-    }
-
 }
