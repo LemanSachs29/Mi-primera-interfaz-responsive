@@ -38,9 +38,12 @@ header {
     justify-content: center;
     align-items: center;
     gap: 2%;
-    padding: 3%
+    padding: 1rem;
 }
 
+.header__logo {
+    padding-bottom: 1rem;
+}
 
 .nav__list {
     display: flex;
@@ -117,7 +120,7 @@ footer {
     gap: 5%
 }
 
-/**
+
 
 @media (min-width: 768px) {
     body {
@@ -138,7 +141,7 @@ footer {
         padding-left: 10%;
     }
 
-    .header__nav{
+    .header__nav {
         padding-right: 10%;
     }
 
@@ -166,5 +169,3 @@ footer {
     }
 
 }
-
-*/
