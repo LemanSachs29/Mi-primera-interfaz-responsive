@@ -12,7 +12,7 @@
 
 # Primer proyecto responsive con CSS
 
-Este es un proyecto sencillo donde se hace pedia hacer una interfaz web responsiva haciendo uso exclusivo de CSS. Para ello, se ha implementado el uso de tecnología CSS grid y flexbox para configurar la disposición del layout y el contenido de los contenedores.
+Este es un proyecto sencillo donde se hace pedia hacer una interfaz web responsiva haciendo uso exclusivo de CSS. Para ello, hemos seguido un enfoque *Mobile first*
 
 **"Para esta actividad, utilizarán técnicas avanzadas de maquetación web con Flexbox para construir una página web responsiva. Además, aplicarán principios de herencia, especificidad y la metodología BEM (Block, Element, Modifier) para mantener un código limpio y escalable. El entorno de desarrollo será Visual Studio Code (VS Code)."
 **
