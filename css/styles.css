@@ -131,7 +131,7 @@ footer {
     body {
         grid-template:
             "header header" 10%
-            "aside  main" auto
+            "aside  main"   auto
             "footer footer" 10% /
             20% auto;
     }
